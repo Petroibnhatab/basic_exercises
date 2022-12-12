@@ -13,6 +13,8 @@ students = [
     {'first_name': 'Петя'},
 ]
 # ???
+students = dict(students)
+print(students)
 
 
 # Задание 2
