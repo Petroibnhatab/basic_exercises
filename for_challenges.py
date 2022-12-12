@@ -3,6 +3,10 @@
 
 names = ['Оля', 'Петя', 'Вася', 'Маша']
 # ???
+index_name = 0
+for i in names:  
+    print(names[index_name])
+    index_name +=1
 
 
 # Задание 2
@@ -13,7 +17,10 @@ names = ['Оля', 'Петя', 'Вася', 'Маша']
 
 names = ['Оля', 'Петя', 'Вася', 'Маша']
 # ???
-
+index_name = 0
+for i in names:  
+    print(names[index_name], ':', (len(names[index_name])))
+    index_name +=1
 
 # Задание 3
 # Необходимо вывести имена всех учеников из списка, рядом с именем вывести пол ученика
@@ -26,6 +33,17 @@ is_male = {
 }
 names = ['Оля', 'Петя', 'Вася', 'Маша']
 # ???
+s = 0
+while s == len(names):
+    if is_male[names[s]] == False:
+        print(names[s], 'женский')
+    else:
+        print(names[s], 'мужской')
+    s +=1
+#нет мыслей по поводу реализации этого задания
+
+
+
 
 
 # Задание 4
@@ -41,6 +59,13 @@ groups = [
     ['Оля', 'Петя', 'Гриша'],
 ]
 # ???
+print('Всего', len(groups), 'группы')
+len_grup = 0
+min_value_groups = 1
+while len_grup != len(groups):
+    print('Группа', min_value_groups, ':', len(groups[len_grup]), 'ученика.')
+    len_grup +=1
+    min_value_groups +=1
 
 
 # Задание 5
@@ -55,3 +80,10 @@ groups = [
     ['Вася', 'Маша', 'Саша', 'Женя'],
 ]
 # ???
+len_grup = 0
+min_value_groups = 1
+while len_grup != len(groups):
+    print('Группа', min_value_groups, ':', " ".join(groups[len_grup
+    ]))
+    len_grup +=1
+    min_value_groups +=1
